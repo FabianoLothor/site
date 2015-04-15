@@ -1,0 +1,54 @@
+/* Elements */
+
+body {
+	background: url("../images/background.png");
+
+	color: #FFFFFF;
+	
+	font-size: 100%;
+	font-family: Calibri, Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Yanone Kaffeesatz";
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+header { margin: 50px 0 25px 0; }
+
+header h5 {
+	color: #999999;
+
+	font-weight: 500;
+}
+
+/* IDs */
+
+#main {
+	width: 75%;
+	max-width: 950px;
+}
+
+#content {
+	background: #FFFFFF;
+
+	width: 100%;
+
+	min-height: 520px;
+}
+
+/* Classes */
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
