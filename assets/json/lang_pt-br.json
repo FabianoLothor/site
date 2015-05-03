@@ -1,0 +1,24 @@
+{
+	"copyright" : "© 2015{to}, Todos os direitos reservados.",
+    "profession" : "Desenvolvedor de Sistemas",
+    "menu" : {
+    	"profile" : {
+    		"title" : "Perfil",
+    		"subtitle" : "Resumo e Curiosidades",
+    		"icon" : "user",
+    		"enable" : true
+    	},
+    	"experience" : {
+    		"title" : "Carreira",
+    		"subtitle" : "Habilidades e Experiências",
+    		"icon" : "code",
+    		"enable" : true
+		},
+    	"contact" : {
+    		"title" : "Contato",
+    		"subtitle" : "Fale Comigo",
+    		"icon" : "envelope",
+    		"enable" : true
+    	}
+    }
+}

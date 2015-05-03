@@ -1,0 +1,10 @@
+{
+	"default_language" : "pt-br",
+	"colors" : [
+		"bg_dark_red",
+		"bg_green",
+		"bg_blue",
+		"bg_dark_yellow",
+		"bg_orange"
+	]
+}

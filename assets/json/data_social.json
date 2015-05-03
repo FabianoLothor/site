@@ -1,0 +1,37 @@
+{
+	"facebook" : {
+		"name" : "Facebook",
+		"url" : "",
+		"enable" : true
+	},
+	"github" : {
+		"name" : "GitHub",
+		"url" : "",
+		"enable" : true
+	},
+	"googleplus" : {
+		"name" : "Google+",
+		"url" : "",
+		"enable" : true
+	},
+	"linkedin" : {
+		"name" : "LinkedIn",
+		"url" : "",
+		"enable" : true
+	},
+	"twitch" : {
+		"name" : "Twitch",
+		"url" : "",
+		"enable" : false
+	},
+	"twitter" : {
+		"name" : "Twitter",
+		"url" : "",
+		"enable" : false
+	},
+	"youtube" : {
+		"name" : "Youtube",
+		"url" : "",
+		"enable" : false
+	}
+}

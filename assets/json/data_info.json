@@ -1,0 +1,14 @@
+{
+	"name" : "Fabiano",
+	"surname" : "Carneiro",
+	"last_name" : "de Oliveira",
+	"nickname" : "Lothor",
+	"email" : "fabiano.lothor@gmail.com",
+	"skype" : "fabiano.lothor",
+	"phone" : "+55 (83) 8734-7264",
+	"birthday" : {
+		"day" : "05",
+		"month" : "02",
+		"year" : "1992"
+	}
+}
