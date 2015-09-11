@@ -1,37 +1,37 @@
 {
 	"facebook" : {
 		"name" : "Facebook",
-		"url" : "",
+		"url" : "https://www.facebook.com/fabianolothor.me",
 		"enable" : true
 	},
 	"github" : {
 		"name" : "GitHub",
-		"url" : "",
+		"url" : "https://github.com/FabianoLothor",
 		"enable" : true
 	},
 	"googleplus" : {
 		"name" : "Google+",
-		"url" : "",
-		"enable" : true
+		"url" : "https://plus.google.com/u/0/104752492053328887734/",
+		"enable" : false
 	},
 	"linkedin" : {
 		"name" : "LinkedIn",
-		"url" : "",
+		"url" : "https://br.linkedin.com/in/fabianolothor",
 		"enable" : true
 	},
 	"twitch" : {
 		"name" : "Twitch",
-		"url" : "",
+		"url" : "http://www.twitch.tv/fabianolothor",
 		"enable" : false
 	},
 	"twitter" : {
 		"name" : "Twitter",
-		"url" : "",
+		"url" : "https://twitter.com/FabianoLothor",
 		"enable" : false
 	},
 	"youtube" : {
 		"name" : "Youtube",
-		"url" : "",
+		"url" : "https://www.youtube.com/user/FabianoLothor",
 		"enable" : false
 	}
 }
