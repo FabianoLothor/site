@@ -102,12 +102,18 @@ ul#menu {
 .last_social_icon { margin-right: 0; }
 
 .content {
-	color: #000000;
+	color: #FFFFFF;
 
 	float: left;
 
 	width: 43.75rem;
 	height: 100%;
+}
+
+.content div {
+	width: 43.75rem;
+
+	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
 }
 
 .active.bg_dark_red { background: #7E3C48; }
