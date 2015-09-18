@@ -44,6 +44,7 @@ document.addEventListener("contentReceived", function(e) {
 			$("#menu").append("<li class='menu_item'><a alt='" + menu[index].title + "' href='#'><div id='" + index + "' class='menu_item_block " + _settings.colors[colorsUsed] + "'><i class='fa fa-" + menu[index].icon + "'></i><strong><span class='menu_item_title'>" + menu[index].title + "</span></strong><span class='menu_item_subtitle'>" + menu[index].subtitle + "</span></div></a></li>");
 			
 			$("section#" + index + ".content").addClass(_settings.colors[colorsUsed]);
+			$("section#" + index + ".content h2").html(menu[index].subtitle);
 
 			++colorsUsed;
 		}
