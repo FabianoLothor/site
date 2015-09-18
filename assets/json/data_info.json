@@ -3,12 +3,15 @@
 	"surname" : "Carneiro",
 	"last_name" : "de Oliveira",
 	"nickname" : "Lothor",
+	"locality" : "João Pessoa/PB, Brasil",
 	"email" : "fabiano.lothor@gmail.com",
 	"skype" : "fabiano.lothor",
-	"phone" : "+55 (83) 8734-7264",
+	"phone" : "+55 (83) 9-8734-7264",
+	"birthplace" : "Santa Rita/PB, Brasil",
 	"birthday" : {
 		"day" : "05",
 		"month" : "02",
-		"year" : "1992"
+		"year" : "1992",
+		"complete" : "05/02/1992"
 	}
 }
