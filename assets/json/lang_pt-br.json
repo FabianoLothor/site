@@ -21,15 +21,21 @@
     		"enable" : true
     	}
     },
-    "content" : {
-        "profile" : {
+    "profile" : {
+        "name" : "Nome",
+        "nickname" : "Apelido",
+        "locality" : "Localidade",
+        "email" : "E-Mail",
+        "skype" : "Skype",
+        "phone" : "Telefone",
+        "birthplace" : "Naturalidade",
+        "birthday" : "Data de Nascimento",
+        "resume" : "Desenvolvedor de Sistemas, Estudante nas Horas Vagas e Apaixonado por: Tecnologia, Jogos e Internet."
+    },
+    "experience" : {
 
-        },
-        "experience" : {
-
-        },
-        "contact" : {
-            
-        }
+    },
+    "contact" : {
+        
     }
 }
