@@ -2,7 +2,7 @@
 	"facebook" : {
 		"name" : "Facebook",
 		"url" : "https://www.facebook.com/fabianolothor.me",
-		"enable" : false
+		"enable" : true
 	},
 	"github" : {
 		"name" : "GitHub",
