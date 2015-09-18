@@ -2,13 +2,16 @@
 document.addEventListener("loadedSettings", function(e) {
 	_settings = e.detail;
 
-	waitingSettings();
+	waitingDependencies();
 }, false);
 
 document.addEventListener("informationReceived", function(e) {
-	information = e.detail;
+	_informations = e.detail;
+	_informations.fullName = _informations.name + " " + _informations.surname + " " + _informations.last_name;
 
-	$("#full_name").html(information.name + " " + information.surname + " " + information.last_name);
+	$("#full_name").html(_informations.fullName);
+
+	waitingDependencies();
 }, false);
 
 document.addEventListener("socialMediaReceived", function(e) {
@@ -45,6 +48,27 @@ document.addEventListener("contentReceived", function(e) {
 			
 			$("section#" + index + ".content").addClass(_settings.colors[colorsUsed]);
 			$("section#" + index + ".content h2").html(menu[index].subtitle);
+
+			switch (index) {
+				case "profile" :
+					profile = content.profile;
+
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.name + "</span><span class='value'>" + _informations.fullName + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.nickname + "</span><span class='value'>" + _informations.nickname + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.locality + "</span><span class='value'>" + _informations.locality + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.email + "</span><span class='value'>" + _informations.email + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.skype + "</span><span class='value'>" + _informations.skype + "</span></li>");
+					//$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.phone + "</span><span class='value'>" + _informations.phone + "</span></li>");
+					//$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.birthplace + "</span><span class='value'>" + _informations.birthplace + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.birthday + "</span><span class='value'>" + _informations.birthday.complete + "</span></li>");
+				break;
+				case "experience" :
+
+				break;
+				case "contact" :
+
+				break;
+			}
 
 			++colorsUsed;
 		}

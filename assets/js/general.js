@@ -1,6 +1,7 @@
 //
 
-var _settings;
+var _settings,
+	_informations;
 
 $(document).ready(function() {
 	initialize();
@@ -13,8 +14,10 @@ function initialize() {
 	getSocialMedia();
 }
 
-function waitingSettings() {
-	getContent();
+function waitingDependencies() {
+	if((typeof _settings !== "undefined") && (typeof _informations !== "undefined")) {
+		getContent();
+	}
 }
 
 //
