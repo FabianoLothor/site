@@ -53,14 +53,14 @@ document.addEventListener("contentReceived", function(e) {
 				case "profile" :
 					profile = content.profile;
 
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.name + "</span><span class='value'>" + _informations.fullName + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.nickname + "</span><span class='value'>" + _informations.nickname + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.locality + "</span><span class='value'>" + _informations.locality + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.email + "</span><span class='value'>" + _informations.email + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.skype + "</span><span class='value'>" + _informations.skype + "</span></li>");
-					//$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.phone + "</span><span class='value'>" + _informations.phone + "</span></li>");
-					//$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.birthplace + "</span><span class='value'>" + _informations.birthplace + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><span class='text'>" + profile.birthday + "</span><span class='value'>" + _informations.birthday.complete + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.name + "</label><span>" + _informations.fullName +"</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.nickname + "</label><span>" + _informations.nickname +"</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.locality + "</label><span>" + _informations.locality +"</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.email + "</label><span>" + _informations.email + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.skype + "</label><span>" + _informations.skype + "</span></li>");
+					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.phone + "</label><span>" + _informations.phone + "</span></li>");
+					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthplace + "</label><span>" + _informations.birthplace + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthday + "</label><span>" + _informations.birthday.complete + "</span></li>");
 				break;
 				case "experience" :
 

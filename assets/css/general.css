@@ -47,14 +47,6 @@ footer {
 	text-align: right;
 }
 
-li.personal_informations_item span {
-	margin-bottom: 0.625rem;
-
-	padding: 0.157rem 0.313rem 0.157rem 0.313rem;
-
-	font-family: "Yanone Kaffeesatz";
-}
-
 /* IDs */
 
 #main {
@@ -126,9 +118,9 @@ ul#personal_informations {
 }
 
 .content div {
-	width: 43.75rem;
-
 	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
+
+	width: 43.75rem;
 }
 
 .active.bg_dark_red { background: #7E3C48; }
@@ -144,27 +136,38 @@ h2.subtitle {
 li.menu_item { height: 6.25rem; }
 
 li.personal_informations_item {
-	width: 18.750rem;
+	padding: 0.157rem 0 0.157rem 0;
+
+	width: 20.313rem;
+
+	font-size: 0.75rem;
 }
 
-li.personal_informations_item span.text {
+li.personal_informations_item label {
 	background: #FFFFFF;
 
 	color: #000000;
 
-	width: 6.250rem;
-
 	float: left;
+
+	margin: 0.125rem 0 0.125rem 0;
+	padding: 0.5rem;
+
+	width: 8rem;
+
+	text-align: left;
+	font-weight: bold;
 
 	border-radius: 0.157rem;
 	-moz-border-radius: 0.157rem;
 	-webkit-border-radius: 0.157rem;
 }
 
-li.personal_informations_item span.value {
+li.personal_informations_item span {
 	float: right;
 
-	width: 9.375rem;
+	margin: 0.125rem 0 0.125rem 0;
+	padding: 0.5rem;
 
 	text-align: right;
 }
@@ -181,6 +184,7 @@ div.menu_item_block i.fa {
 	float: right;
 
   	padding: 0.625rem 0 0.938rem 0;
+
   	min-width: 3.75rem;
 
 	border-left: solid 0.063rem #E2E2E2;
