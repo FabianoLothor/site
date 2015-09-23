@@ -47,6 +47,35 @@ footer {
 	text-align: right;
 }
 
+li.personal_informations_item label {
+	background: #FFFFFF;
+
+	color: #000000;
+
+	float: left;
+
+	margin: 0.125rem 0 0.125rem 0;
+	padding: 0.5rem;
+
+	width: 8rem;
+
+	text-align: left;
+	font-weight: bold;
+
+	border-radius: 0.157rem;
+	-moz-border-radius: 0.157rem;
+	-webkit-border-radius: 0.157rem;
+}
+
+li.personal_informations_item span {
+	float: right;
+
+	margin: 0.125rem 0 0.125rem 0;
+	padding: 0.5rem;
+
+	text-align: right;
+}
+
 /* IDs */
 
 #main {
@@ -141,35 +170,6 @@ li.personal_informations_item {
 	width: 20.313rem;
 
 	font-size: 0.75rem;
-}
-
-li.personal_informations_item label {
-	background: #FFFFFF;
-
-	color: #000000;
-
-	float: left;
-
-	margin: 0.125rem 0 0.125rem 0;
-	padding: 0.5rem;
-
-	width: 8rem;
-
-	text-align: left;
-	font-weight: bold;
-
-	border-radius: 0.157rem;
-	-moz-border-radius: 0.157rem;
-	-webkit-border-radius: 0.157rem;
-}
-
-li.personal_informations_item span {
-	float: right;
-
-	margin: 0.125rem 0 0.125rem 0;
-	padding: 0.5rem;
-
-	text-align: right;
 }
 
 div.menu_item_block {
