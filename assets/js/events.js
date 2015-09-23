@@ -60,7 +60,7 @@ document.addEventListener("contentReceived", function(e) {
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.skype + "</label><span>" + _informations.skype + "</span></li>");
 					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.phone + "</label><span>" + _informations.phone + "</span></li>");
 					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthplace + "</label><span>" + _informations.birthplace + "</span></li>");
-					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthday + "</label><span>" + _informations.birthday.complete + "</span></li>");
+					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthday + "</label><span>" + _informations.birthday.complete + " (" + (getCurrentYear() - _informations.birthday.year) + ")</span></li>");
 				break;
 				case "experience" :
 

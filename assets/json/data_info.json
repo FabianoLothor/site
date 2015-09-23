@@ -9,9 +9,9 @@
 	"phone" : "+55 (83) 9-8734-7264",
 	"birthplace" : "Santa Rita/PB, Brasil",
 	"birthday" : {
-		"day" : "05",
-		"month" : "02",
-		"year" : "1992",
+		"day" : 5,
+		"month" : 2,
+		"year" : 1992,
 		"complete" : "05/02/1992"
 	}
 }
