@@ -47,6 +47,10 @@ footer {
 	text-align: right;
 }
 
+.content div {
+	width: 46.875rem;
+}
+
 li.personal_informations_item label {
 	background: #FFFFFF;
 
@@ -79,8 +83,8 @@ li.personal_informations_item span {
 /* IDs */
 
 #main {
-	min-width: 59.375rem;
-	max-width: 59.375rem;
+	min-width: 62.500rem;
+	max-width: 62.500rem;
 }
 
 #social {
@@ -114,8 +118,10 @@ ul#menu {
 }
 
 ul#personal_informations {
+	float: right;
+
 	padding: 0;
-	margin: 0;
+	margin: 0 1.875rem 0 0;
 
 	list-style-type: none;
 }
@@ -142,14 +148,8 @@ ul#personal_informations {
 
 	float: left;
 
-	width: 43.75rem;
+	width: 46.875rem;
 	height: 100%;
-}
-
-.content div {
-	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
-
-	width: 43.75rem;
 }
 
 .active.bg_dark_red { background: #7E3C48; }
@@ -159,7 +159,8 @@ ul#personal_informations {
 .active.bg_orange { background: #D46A15; }
 
 h2.subtitle {
-	margin-bottom: 1.875rem;
+	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
+}
 }
 
 li.menu_item { height: 6.25rem; }
