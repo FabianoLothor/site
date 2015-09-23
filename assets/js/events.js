@@ -53,6 +53,8 @@ document.addEventListener("contentReceived", function(e) {
 				case "profile" :
 					profile = content.profile;
 
+					$("#resume").html(profile.resume);
+
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.name + "</label><span>" + _informations.fullName +"</span></li>");
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.nickname + "</label><span>" + _informations.nickname +"</span></li>");
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.locality + "</label><span>" + _informations.locality +"</span></li>");
