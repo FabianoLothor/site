@@ -39,6 +39,7 @@ document.addEventListener("contentReceived", function(e) {
 	menu = content.menu;
 	colorsUsed = 0;
 
+	$("title").html(_informations.fullName + " - " + content.profession);
 	$("#profession").html(content.profession);
 	$("#copyright").html(content.copyright.replace("{to}", getCurrentYear() > 2015 ? " - " + getCurrentYear() : ""));
 
@@ -63,6 +64,7 @@ document.addEventListener("contentReceived", function(e) {
 					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.phone + "</label><span>" + _informations.phone + "</span></li>");
 					//$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthplace + "</label><span>" + _informations.birthplace + "</span></li>");
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthday + "</label><span>" + _informations.birthday.complete + " (" + (getCurrentYear() - _informations.birthday.year) + ")</span></li>");
+					$("#personal_informations").append("<li class='clear'></li>");
 
 					for (var index = 1; index <= _settings.total_photos; ++index) {
 						$("#photos_slider").append("<img alt='Foto " + index + "' src='" + _settings.photos_path + "photo_" + index + ".jpg' />");;

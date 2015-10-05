@@ -134,20 +134,24 @@ li.personal_informations_item span {
 }
 
 ul#menu {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	list-style-type: none;
 }
 
 ul#personal_informations {
-	margin: 0;
+	margin: 0 0 1.875rem 0;
 	padding: 0;
 
 	list-style-type: none;
 }
 
 /* Classes */
+
+.clear {
+	clear: both;
+}
 
 .center {
 	margin-right: auto;
