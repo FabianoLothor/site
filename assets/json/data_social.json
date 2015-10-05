@@ -27,7 +27,7 @@
 	"twitter" : {
 		"name" : "Twitter",
 		"url" : "https://twitter.com/FabianoLothor",
-		"enable" : false
+		"enable" : true
 	},
 	"youtube" : {
 		"name" : "Youtube",
