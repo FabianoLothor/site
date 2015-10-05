@@ -41,7 +41,9 @@ document.addEventListener("contentReceived", function(e) {
 
 	$("title").html(_informations.fullName + " - " + content.profession);
 	$("#profession").html(content.profession);
-	$("#copyright").html(content.copyright.replace("{to}", getCurrentYear() > 2015 ? " - " + getCurrentYear() : ""));
+	$("#copyright").html(content.copyright
+		.replace("{yearSite}", _settings.yearSite)
+		.replace("{to}", getCurrentYear() > _settings.yearSite ? " - " + getCurrentYear() : ""));
 
 	for (index in menu) {
 		if(menu[index].enable) {
