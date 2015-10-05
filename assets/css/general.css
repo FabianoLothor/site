@@ -53,6 +53,21 @@ footer {
 	width: 43.125rem;
 }
 
+#photos_slider img {
+	padding: 0.625rem;
+
+	max-width: 18.750rem;
+	max-height: 14.063rem;
+
+	border: 0.063rem solid #FFFFFF;
+}
+
+p {
+	margin: 0 0 1.875rem 0;
+
+	text-align: justify;
+}
+
 li.personal_informations_item label {
 	background: #FFFFFF;
 
@@ -80,15 +95,6 @@ li.personal_informations_item span {
 	padding: 0.5rem;
 
 	text-align: right;
-}
-
-#photos_slider img {
-	padding: 0.625rem;
-
-	max-width: 18.750rem;
-	max-height: 14.063rem;
-
-	border: 0.063rem solid #FFFFFF;
 }
 
 /* IDs */
@@ -119,12 +125,6 @@ li.personal_informations_item span {
 	height: 100%;
 
   	font-family: "Yanone Kaffeesatz";
-}
-
-#resume {
-	margin: 0 0 1.875rem 0;
-
-	text-align: justify;
 }
 
 #photos_slider {
