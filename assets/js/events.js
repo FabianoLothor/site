@@ -68,8 +68,8 @@ document.addEventListener("contentReceived", function(e) {
 					$("#personal_informations").append("<li class='personal_informations_item'><label>" + profile.birthday + "</label><span>" + _informations.birthday.complete + " (" + (getCurrentYear() - _informations.birthday.year) + ")</span></li>");
 					$("#personal_informations").append("<li class='clear'></li>");
 
-					for (var index = 1; index <= _settings.total_photos; ++index) {
-						$("#photos_slider").append("<img alt='Foto " + index + "' src='" + _settings.photos_path + "photo_" + index + ".jpg' />");;
+					for (var i = 1; i <= _settings.total_photos; ++i) {
+						$("#photos_slider").append("<img alt='Foto " + i + "' src='" + _settings.photos_path + "photo_" + i + ".jpg' />");;
 					};
 
 					$('.nivoSlider').nivoSlider({
@@ -80,7 +80,19 @@ document.addEventListener("contentReceived", function(e) {
 					});
 				break;
 				case "experience" :
+					experience = content.experience;
 
+					$("#jobs").children().first().html(content.experience.jobs_title);
+
+					for (job in experience.jobs) {
+						$("#jobs").children().first().after("<h6 class='company'>" + experience.jobs[job].company + "<span>" + job.replace("{today}", getCurrentMonth().padLeft(2) + "/" + getCurrentYear()) + "</span></h6>");
+
+						for (task in experience.jobs[job].tasks.reverse()) {
+							$("h6.company").first().after("<ul class='office'><li><i class='fa fa-caret-right'><span>" + experience.jobs[job].tasks[task] + ".</span></i></li></ul>");
+						}
+					}
+
+					$("#education").children().first().html(content.experience.education_title);
 				break;
 				case "contact" :
 

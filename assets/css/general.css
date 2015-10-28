@@ -68,6 +68,10 @@ p {
 	text-align: justify;
 }
 
+ul {
+	list-style: none;
+}
+
 li.personal_informations_item label {
 	background: #FFFFFF;
 
@@ -95,6 +99,30 @@ li.personal_informations_item span {
 	padding: 0.5rem;
 
 	text-align: right;
+}
+
+h6.company {
+	margin-top: 0.530rem;
+	margin-bottom: 0.530rem;
+
+	font-family: Calibri, Arial;
+
+	font-size: 0.75rem;
+}
+
+h6.company span {
+	float: right;
+
+	color: #FFFFFF;
+
+	font-weight: bold;
+}
+
+#jobs h4,
+#education h4 { margin-bottom: 0.938rem; }
+
+ul.office li i span {
+	margin-left: 0.313rem;
 }
 
 /* IDs */
@@ -133,19 +161,13 @@ li.personal_informations_item span {
 	text-align: center;
 }
 
-ul#menu {
-	margin: 0;
-	padding: 0;
-
-	list-style-type: none;
-}
-
 ul#personal_informations {
 	margin: 0 0 1.875rem 0;
 	padding: 0;
-
-	list-style-type: none;
 }
+
+#jobs,
+#education { margin-bottom: 1.875rem; }
 
 /* Classes */
 
@@ -185,7 +207,7 @@ ul#personal_informations {
 .active.bg_green { background: #789B2E; }
 .active.bg_orange { background: #D46A15; }
 
-h2.subtitle { padding-bottom: 1.875rem; }
+h2.subtitle { margin-bottom: 1.875rem; }
 
 li.menu_item { height: 6.25rem; }
 
@@ -224,9 +246,15 @@ span.menu_item_subtitle {
 div.menu_item_block.active span.menu_item_subtitle { color: #FFFFFF; }
 
 div.left,
-div.right {
-	width: 20.313rem;
-}
+div.right { width: 20.313rem; }
 
 div.left { float: left; }
 div.right { float: right; }
+
+/* MIX */
+
+ul#menu,
+ul.office {
+	margin: 0;
+	padding: 0;
+}

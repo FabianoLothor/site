@@ -33,7 +33,53 @@
         "resume" : "Sou formado em Análise e Desenvolvimento de Sistemas, trabalhei por cerca de quatro anos como desenvolvedor antes de ingressar na UFPB como servidor público, no entanto, contínuo atuando na área como <i>freelancer</i> e através de projetos pessoais. Nas horas vagas, adoro estudar, ler e jogar jogos eletrônicos."
     },
     "experience" : {
+        "jobs_title" : "Atividades Profisisonais",
+        "education_title" : "Formação Acadêmica",
+        "jobs" : {
+            "05/2010 - 12/2010" : {
+                "company" : "Secretaria de Educação da Paraíba",
+                "office" : "Técnico de Suporte",
+                "locality" : "João Pessoa/PB, BRA",
+                "tasks" : [
+                    "Manutenção da Infraestrutura de Rede",
+                    "Manutenção de Computadores",
+                    "Serviço de Apoio aos Usuários"
+                ]
+            },
+            "07/2011 - 07/2013" : {
+                "company" : "Dantel",
+                "office" : "Desenvolvedor de Sistemas Júnior",
+                "locality" : "Cabedelo/PB, BRA",
+                "tasks" : [
+                    "Análise de Projetos",
+                    "Desenvolvimento de Sistemas",
+                    "Modelagem de Bancos de Dados"
+                ]
+            },
+            "07/2013 - 03/2015" : {
+                "company" : "Unimed",
+                "office" : "Analista de Sistemas Computacionais Júnior",
+                "locality" : "João Pessoa/PB, BRA",
+                "tasks" : [
+                    "Desenvolvimento de Sistemas",
+                    "Gerenciamento das Tarefas",
+                    "Manutenção do Banco de Dados"
+                ]
+            },
+            "03/2015 - {today}" : {
+                "company" : "UFPB",
+                "office" : "Técnico de Tecnologia da Informação",
+                "locality" : "João Pessoa/PB, BRA",
+                "tasks" : [
+                    "Manutenção da Infraestrutura de Rede",
+                    "Manutenção de Computadores",
+                    "Serviço de Apoio aos Usuários"
+                ]
+            }
+        },
+        "education" : {
 
+        }
     },
     "contact" : {
         

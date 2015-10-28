@@ -30,6 +30,10 @@ function getContent() {
 	loadJSON("lang_" + _settings.default_language, "contentReceived");
 }
 
+function getCurrentMonth() {
+	return (new Date()).getMonth() + 1;
+}
+
 function getCurrentYear() {
 	return (new Date()).getFullYear();
 }
@@ -64,3 +68,7 @@ function menuLoaded() {
 
 	$(".menu_item_block").eq(0).click();
 }
+
+//
+
+Number.prototype.padLeft = function (n,str) { return Array(n-String(this).length+1).join(str||'0')+this; }
