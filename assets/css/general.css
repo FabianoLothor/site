@@ -50,7 +50,7 @@ footer {
 .content > div {
 	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
 
-	width: 43.125rem;
+	width: 42.125rem;
 }
 
 #photos_slider img {
@@ -203,16 +203,29 @@ ul#personal_informations {
 	width: 46.875rem;
 	height: 100%;
 
-	font-size: 0.75rem;
-
 	overflow: auto;
+
+	font-size: 0.75rem;
+}
+
+.content::-webkit-scrollbar {
+    width: 1rem;
 }
 
 .active.bg_blue { background: #5CB9CA; }
+.active.bg_blue::-webkit-scrollbar-thumb { background-color: #6DCADB; }
+
 .active.bg_dark_red { background: #7E3C48; }
+.active.bg_dark_red::-webkit-scrollbar-thumb { background-color: #8F4D59; }
+
 .active.bg_dark_yellow { background: #CD9C53; }
+.active.bg_dark_yellow::-webkit-scrollbar-thumb { background-color: #DEAD64; }
+
 .active.bg_green { background: #789B2E; }
+.active.bg_green::-webkit-scrollbar-thumb { background-color: #89AC3F; }
+
 .active.bg_orange { background: #D46A15; }
+.active.bg_orange::-webkit-scrollbar-thumb { background-color: #E57B26; }
 
 h2.subtitle { margin-bottom: 1.875rem; }
 
