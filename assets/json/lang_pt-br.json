@@ -35,6 +35,7 @@
     "experience" : {
         "jobs_title" : "Atividades Profisisonais",
         "education_title" : "Formação Acadêmica",
+        "skills_title" : "Competências",
         "coursing" : "cursando",
         "jobs" : {
             "05/2010 - 12/2010" : {
@@ -83,6 +84,51 @@
                 "institution" : "Faculdade iDEZ",
                 "formation" : "Análise e Desenvolvimento de Sistemas",
                 "locality" : "João Pessoa/PB, BRA"
+            }
+        },
+        "skills" : {
+            "frameworks" : {
+                "text" : "Frameworks",
+                "list" : [
+                    "JQuery (JavaScript)",
+                    "JSF e JSP (JAVA)",
+                    "MVC (ASP.NET)",
+                    "Yii (PHP)",
+                    "Zend (PHP)"
+                ]
+            },
+            "database" : {
+                "text" : "Banco de Dados",
+                "list" : [
+                    "MySQL",
+                    "PostgreSQL",
+                    "SQL Server",
+                    "SQLite",
+                    "Oracle",
+                    "PostGIS",
+                    "Hibernate",
+                    "NHibernate"
+                ]
+            },
+            "programming_languages" : {
+                "text" : "Linguagens de Programação",
+                "list" : [
+                    "C",
+                    "C#",
+                    "JAVA",
+                    "JavaScript",
+                    "Objective-C",
+                    "PHP",
+                    "Shell Script",
+                    "SQL"
+                ]
+            },
+            "languages" : {
+                "text" : "Idiomas",
+                "list" : [
+                    "Português (Nativo)",
+                    "Inglês (Técnico)"
+                ]
             }
         }
     },

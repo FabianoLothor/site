@@ -102,7 +102,8 @@ li.personal_informations_item span {
 }
 
 h6.company,
-h6.institution {
+h6.institution,
+h6.skill {
 	margin-top: 0.530rem;
 	margin-bottom: 0.530rem;
 
@@ -112,7 +113,8 @@ h6.institution {
 }
 
 h6.company span,
-h6.institution span {
+h6.institution span,
+h6.skill span {
 	float: right;
 
 	color: #FFFFFF;
@@ -121,10 +123,11 @@ h6.institution span {
 }
 
 #jobs h4,
-#education h4 { margin-bottom: 0.938rem; }
+#education h4,
+#skills h4 { margin-bottom: 0.938rem; }
 
-ul.formation li i span,
-ul.office li i span {
+ul.office li i span,
+ul.formation li i span {
 	margin-left: 0.313rem;
 
 	font-family: Calibri, Arial;
@@ -172,7 +175,8 @@ ul#personal_informations {
 }
 
 #jobs,
-#education { margin-bottom: 1.875rem; }
+#education,
+#skills { margin-bottom: 1.875rem; }
 
 /* Classes */
 
@@ -276,8 +280,8 @@ div.right { float: right; }
 /* MIX */
 
 ul#menu,
-ul.formation,
-ul.office {
+ul.office,
+ul.formation {
 	margin: 0;
 	padding: 0;
 }

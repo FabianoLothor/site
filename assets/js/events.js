@@ -99,6 +99,14 @@ document.addEventListener("contentReceived", function(e) {
 						
 						$("h6.institution").first().after("<ul class='formation'><li><i class='fa fa-caret-right'><span>" + experience.education[education].formation + ".</span></i></li></ul>");
 					}
+
+					$("#skills").children().first().html(content.experience.skills_title);
+
+					for (skill in experience.skills) {
+						$("#skills").children().first().after("<h6 class='skill'>" + experience.skills[skill].text + "</h6>");
+						
+						/*$("h6.institution").first().after("<ul class='formation'><li><i class='fa fa-caret-right'><span>" + experience.education[education].formation + ".</span></i></li></ul>");*/
+					}
 				break;
 				case "contact" :
 
