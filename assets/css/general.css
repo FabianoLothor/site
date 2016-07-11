@@ -48,9 +48,9 @@ footer {
 }
 
 .content > div {
-	padding: 0.938rem 1.875rem 0.938rem 1.875rem;
+	margin: 0.938rem 1.875rem 0.938rem 1.875rem;
 
-	width: 42.125rem;
+	width: 43.125rem;
 }
 
 #photos_slider img {
@@ -72,12 +72,11 @@ ul {
 	list-style: none;
 }
 
-li.personal_informations_item label {
+li.personal_informations_item label,
+li.skills_item label {
 	background: #FFFFFF;
 
 	color: #000000;
-
-	float: left;
 
 	margin: 0.125rem 0 0.125rem 0;
 	padding: 0.5rem;
@@ -90,6 +89,19 @@ li.personal_informations_item label {
 	border-radius: 0.157rem;
 	-moz-border-radius: 0.157rem;
 	-webkit-border-radius: 0.157rem;
+}
+
+li.skills_item label {
+	text-align: center;
+}
+
+li.personal_informations_item label,
+li.skills_item_left label {
+	float: left;
+}
+
+li.skills_item_right label {
+	float: right;
 }
 
 li.personal_informations_item span {
@@ -110,6 +122,10 @@ h6.skill {
 	font-family: Calibri, Arial;
 
 	font-size: 0.75rem;
+}
+
+h6.skill {
+	display: inline-block;
 }
 
 h6.company span,
@@ -169,7 +185,8 @@ ul.formation li i span {
 	text-align: center;
 }
 
-ul#personal_informations {
+ul#personal_informations,
+ul.skills {
 	margin: 0 0 1.875rem 0;
 	padding: 0;
 }
@@ -272,7 +289,11 @@ span.menu_item_subtitle {
 div.menu_item_block.active span.menu_item_subtitle { color: #FFFFFF; }
 
 div.left,
-div.right { width: 20.313rem; }
+div.right {
+	margin-bottom: 0.938rem;
+	
+	width: 20.313rem;
+}
 
 div.left { float: left; }
 div.right { float: right; }

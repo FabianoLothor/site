@@ -105,7 +105,11 @@ document.addEventListener("contentReceived", function(e) {
 					for (skill in experience.skills) {
 						$("#skills").children().first().after("<h6 class='skill'>" + experience.skills[skill].text + "</h6>");
 						
-						/*$("h6.institution").first().after("<ul class='formation'><li><i class='fa fa-caret-right'><span>" + experience.education[education].formation + ".</span></i></li></ul>");*/
+						$("h6.skill").first().after("<ul class='skills'></ul>");
+						
+						for (skill_item in experience.skills[skill].list) {
+							$(".skills").first().append("<li class='skills_item " + (skill_item % 2 === 0 ? "skills_item_left" : "skills_item_right") + "'><label>" + experience.skills[skill].list[skill_item] + "</label></li>");
+						}
 					}
 				break;
 				case "contact" :
