@@ -1,7 +1,7 @@
 {
 	"facebook" : {
 		"name" : "Facebook",
-		"url" : "https://www.facebook.com/fabianolothor.me",
+		"url" : "https://www.facebook.com/fabianolothor",
 		"enable" : true
 	},
 	"github" : {
@@ -13,6 +13,11 @@
 		"name" : "Google+",
 		"url" : "https://plus.google.com/u/0/104752492053328887734/",
 		"enable" : false
+	},
+	"instagram" : {
+		"name" : "Instagram",
+		"url" : "https://www.instagram.com/fabianolothor/",
+		"enable" : true
 	},
 	"linkedin" : {
 		"name" : "LinkedIn",
@@ -31,7 +36,7 @@
 	},
 	"youtube" : {
 		"name" : "Youtube",
-		"url" : "https://www.youtube.com/user/FabianoLothor",
-		"enable" : false
+		"url" : "https://goo.gl/j3f3g5",
+		"enable" : true
 	}
 }
