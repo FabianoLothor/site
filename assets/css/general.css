@@ -203,8 +203,6 @@ ul#personal_informations {
 	width: 46.875rem;
 	height: 100%;
 
-	overflow: auto;
-
 	font-size: 0.75rem;
 }
 
@@ -226,6 +224,10 @@ ul#personal_informations {
 
 .active.bg_orange { background: #D46A15; }
 .active.bg_orange::-webkit-scrollbar-thumb { background-color: #E57B26; }
+
+.scroll {
+	overflow: auto;
+}
 
 h2.subtitle { margin-bottom: 1.875rem; }
 
