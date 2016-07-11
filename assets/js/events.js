@@ -93,6 +93,12 @@ document.addEventListener("contentReceived", function(e) {
 					}
 
 					$("#education").children().first().html(content.experience.education_title);
+
+					for (education in experience.education) {
+						$("#education").children().first().after("<h6 class='institution'>" + experience.education[education].institution + "<span>" + education.replace("{today}", getCurrentYear() + " (" + experience.coursing + ")") + "</span></h6>");
+						
+						$("h6.institution").first().after("<ul class='formation'><li><i class='fa fa-caret-right'><span>" + experience.education[education].formation + ".</span></i></li></ul>");
+					}
 				break;
 				case "contact" :
 

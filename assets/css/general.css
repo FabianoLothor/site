@@ -101,7 +101,8 @@ li.personal_informations_item span {
 	text-align: right;
 }
 
-h6.company {
+h6.company,
+h6.institution {
 	margin-top: 0.530rem;
 	margin-bottom: 0.530rem;
 
@@ -110,7 +111,8 @@ h6.company {
 	font-size: 0.75rem;
 }
 
-h6.company span {
+h6.company span,
+h6.institution span {
 	float: right;
 
 	color: #FFFFFF;
@@ -121,9 +123,10 @@ h6.company span {
 #jobs h4,
 #education h4 { margin-bottom: 0.938rem; }
 
+ul.formation li i span,
 ul.office li i span {
 	margin-left: 0.313rem;
-	
+
 	font-family: Calibri, Arial;
 }
 
@@ -201,6 +204,8 @@ ul#personal_informations {
 	height: 100%;
 
 	font-size: 0.75rem;
+
+	overflow: auto;
 }
 
 .active.bg_blue { background: #5CB9CA; }
@@ -256,6 +261,7 @@ div.right { float: right; }
 /* MIX */
 
 ul#menu,
+ul.formation,
 ul.office {
 	margin: 0;
 	padding: 0;

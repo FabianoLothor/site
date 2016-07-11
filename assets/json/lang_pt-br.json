@@ -35,6 +35,7 @@
     "experience" : {
         "jobs_title" : "Atividades Profisisonais",
         "education_title" : "Formação Acadêmica",
+        "coursing" : "cursando",
         "jobs" : {
             "05/2010 - 12/2010" : {
                 "company" : "Secretaria de Educação da Paraíba",
@@ -78,7 +79,11 @@
             }
         },
         "education" : {
-
+            "2010 - 2013" : {
+                "institution" : "Faculdade iDEZ",
+                "formation" : "Análise e Desenvolvimento de Sistemas",
+                "locality" : "João Pessoa/PB, BRA"
+            }
         }
     },
     "contact" : {
