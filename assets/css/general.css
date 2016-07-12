@@ -33,7 +33,7 @@ strong { font-weight: bold; }
 header { margin: 3.125rem 0 1.563rem 0; }
 
 header h5 {
-	color: #999999;
+	color: #A9A9A9;
 
 	font-weight: 500;
 }
@@ -41,7 +41,7 @@ header h5 {
 footer {
 	margin-top: 1.563rem;
 
-	color: #999999;
+	color: #A9A9A9;
 
 	font-size: 0.75rem;
 	text-align: right;
@@ -260,7 +260,7 @@ span.menu_item_subtitle { display: block; }
 span.menu_item_title { font-size: 1.5rem; }
 
 span.menu_item_subtitle {
-	color: #999999;
+	color: #A9A9A9;
 
 	font-size: 1rem;
 }
@@ -295,7 +295,8 @@ h6.skill {
 /* Forms */
 
 input[type="text"],
-textarea {
+textarea,
+#send_form_button {
 	margin: 0 auto 0.750rem auto;
 	padding: 0 0.313rem 0 0.313rem;
 
@@ -311,10 +312,31 @@ input[type="text"] {
 }
 
 textarea {
-	padding: 0.313rem 0.313rem 0.313rem 0.313rem;
+	padding: 0.313rem;
 
 	width: 99%;
 	height: 6.250rem;
+
+	resize: none;
+}
+
+#send_form_button {
+	margin: 0;
+	padding: 0.625rem;
+
+	float: right;
+
+	background-color: #FFFFFF;
+
+	color: #A9A9A9;
+
+	border: 0;
+
+	cursor: pointer;
+}
+
+#send_form_button:hover {
+    color: #000000;
 }
 
 /* MIX */

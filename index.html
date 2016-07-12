@@ -66,11 +66,11 @@
 							<h2 class="subtitle">{subtitle}</h2>
 
 							<form id="contact_form">
-								<input type="text" name="name" required="required" placeholder="{name} {required}" />
-							    <input type="text" name="mail" required="required" placeholder="{mail} {required}" />
-							    <input type="text" name="phone_number" placeholder="{phone_number}" />
-							    <input type="text" name="subject" required="required" placeholder="{subject} {required}" />
-							    <textarea name="message" required="required" placeholder="{message} {required}"></textarea>
+								<input type="text" name="name" maxlength="100" required="required" placeholder="{name} {required}" />
+							    <input type="text" name="mail" maxlength="100" required="required" placeholder="{mail} {required}" />
+							    <input type="text" name="phone_number" maxlength="25" placeholder="{phone_number}" />
+							    <input type="text" name="subject" maxlength="100" required="required" placeholder="{subject} {required}" />
+							    <textarea name="message" maxlength="500" required="required" placeholder="{message} {required}"></textarea>
 							    <input id="send_form_button" type="submit" value="send" />
 							</form>
 						</div>

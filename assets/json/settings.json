@@ -2,6 +2,7 @@
 	"default_language" : "pt-br",
 	"photos_path" : "assets/images/photos/",
 	"contact_form_id" : "contact_form",
+	"postmail_link" : "https://postmail.invotes.com/send",
 	"postmail_access_token" : "gjrcw53zjmljh6sseit5pjur",
 	"total_photos" : 3,
 	"year_site" : 2016,

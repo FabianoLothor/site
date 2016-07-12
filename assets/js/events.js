@@ -152,16 +152,21 @@ document.addEventListener("sendMail", function(e) {
 	content = e.detail;
 
 	sendFormButton = $(e.srcElement.activeElement);
-	sendFormButton.val(content.contact.sending);
+	sendFormButton.val(content.contact.sending + "...");
     sendFormButton.prop('disabled', true);
-return;
+
     var data = {};
 
     data["access_token"] = _settings.postmail_access_token;
     data["subject"] = $("#" + _settings.contact_form_id + " [name='subject']").val();
-    data["text"] = $("#" + _settings.contact_form_id + " [name='text']").val();
+    data["text"] =
+    	$("#" + _settings.contact_form_id + " [name='name']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='name']").val() + "." + "\n" +
+    	$("#" + _settings.contact_form_id + " [name='mail']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='mail']").val() + "." + "\n" +
+    	$("#" + _settings.contact_form_id + " [name='phone_number']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='phone_number']").val() + "." + "\n" +
+    	//$("#" + _settings.contact_form_id + " [name='subject']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='subject']").val() + "." + "\n" +
+    	$("#" + _settings.contact_form_id + " [name='message']").attr("placeholder") + ": \n\n" + $("#" + _settings.contact_form_id + " [name='message']").val();
 
-	$.post("https://postmail.invotes.com/send",
+	$.post(_settings.postmail_link,
         data,
         function() {
         	console.log("success");
