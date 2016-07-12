@@ -64,6 +64,15 @@
 					<section id="contact" class="content active" hidden="true">
 						<div>
 							<h2 class="subtitle">{subtitle}</h2>
+
+							<form id="contact_form">
+								<input type="text" name="name" required="required" placeholder="{name} {required}" />
+							    <input type="text" name="mail" required="required" placeholder="{mail} {required}" />
+							    <input type="text" name="phone_number" placeholder="{phone_number}" />
+							    <input type="text" name="subject" required="required" placeholder="{subject} {required}" />
+							    <textarea name="message" required="required" placeholder="{message} {required}"></textarea>
+							    <input id="send_form_button" type="submit" value="send" />
+							</form>
 						</div>
 					</section>
 				</section>

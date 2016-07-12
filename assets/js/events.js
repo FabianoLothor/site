@@ -2,6 +2,15 @@
 document.addEventListener("loadedSettings", function(e) {
 	_settings = e.detail;
 
+	_contactFormElement = $("#" + _settings.contact_form_id);
+	_contactFormElement.submit(function(event) { event.preventDefault(); });
+
+	_sendFormButton = $("#" + _settings.contact_form_id + " [name='send']");
+
+	$("body").on("submit", _sendFormButton, function() {
+		loadJSON("lang_" + _settings.default_language, "sendMail");
+	});
+
 	waitingDependencies();
 }, false);
 
@@ -42,8 +51,8 @@ document.addEventListener("contentReceived", function(e) {
 	$("title").html(_informations.fullName + " - " + content.profession);
 	$("#profession").html(content.profession);
 	$("#copyright").html(content.copyright
-		.replace("{yearSite}", _settings.yearSite)
-		.replace("{to}", getCurrentYear() > _settings.yearSite ? " - " + getCurrentYear() : ""));
+		.replace("{year_site}", _settings.year_site)
+		.replace("{to}", getCurrentYear() > _settings.year_site ? " - " + getCurrentYear() : ""));
 
 	for (index in menu) {
 		if(menu[index].enable) {
@@ -113,7 +122,22 @@ document.addEventListener("contentReceived", function(e) {
 					}
 				break;
 				case "contact" :
+					$("#contact_form input[type='text']").each(function() {
+						$(this).attr("placeholder",
+							$(this).attr("placeholder")
+								.replace("{" + $(this).attr("name") + "}", content.contact[$(this).attr("name")])
+								.replace("{required}", content.contact.required)
+						);
+					});
 
+					textarea = $("#contact_form textarea");
+					textarea.attr("placeholder", textarea.attr("placeholder")
+						.replace("{" + textarea.attr("name") + "}", content.contact[textarea.attr("name")])
+						.replace("{required}", content.contact.required)
+					);
+
+					submit = $("#contact_form input[type='submit']");
+					submit.val(content.contact[submit.val()]);
 				break;
 			}
 
@@ -122,4 +146,29 @@ document.addEventListener("contentReceived", function(e) {
 	}
 
 	menuLoaded();
+}, false);
+     
+document.addEventListener("sendMail", function(e) {
+	content = e.detail;
+
+	sendFormButton = $(e.srcElement.activeElement);
+	sendFormButton.val(content.contact.sending);
+    sendFormButton.prop('disabled', true);
+return;
+    var data = {};
+
+    data["access_token"] = _settings.postmail_access_token;
+    data["subject"] = $("#" + _settings.contact_form_id + " [name='subject']").val();
+    data["text"] = $("#" + _settings.contact_form_id + " [name='text']").val();
+
+	$.post("https://postmail.invotes.com/send",
+        data,
+        function() {
+        	console.log("success");
+        }
+    ).fail(function() {
+    	console.log("error");
+    });
+
+    return false;
 }, false);

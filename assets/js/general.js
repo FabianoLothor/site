@@ -1,7 +1,9 @@
 //
 
 var _settings,
-	_informations;
+	_informations,
+	_contactFormElement,
+	_sendFormButton;
 
 $(document).ready(function() {
 	initialize();

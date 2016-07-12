@@ -113,21 +113,6 @@ li.personal_informations_item span {
 	text-align: right;
 }
 
-h6.company,
-h6.institution,
-h6.skill {
-	margin-top: 0.530rem;
-	margin-bottom: 0.530rem;
-
-	font-family: Calibri, Arial;
-
-	font-size: 0.75rem;
-}
-
-h6.skill {
-	display: inline-block;
-}
-
 h6.company span,
 h6.institution span,
 h6.skill span {
@@ -137,10 +122,6 @@ h6.skill span {
 
 	font-weight: bold;
 }
-
-#jobs h4,
-#education h4,
-#skills h4 { margin-bottom: 0.938rem; }
 
 ul.office li i span,
 ul.formation li i span {
@@ -185,15 +166,13 @@ ul.formation li i span {
 	text-align: center;
 }
 
-ul#personal_informations,
-ul.skills {
-	margin: 0 0 1.875rem 0;
-	padding: 0;
-}
-
 #jobs,
 #education,
 #skills { margin-bottom: 1.875rem; }
+
+#jobs h4,
+#education h4,
+#skills h4 { margin-bottom: 0.938rem; }
 
 /* Classes */
 
@@ -291,12 +270,52 @@ div.menu_item_block.active span.menu_item_subtitle { color: #FFFFFF; }
 div.left,
 div.right {
 	margin-bottom: 0.938rem;
-	
+
 	width: 20.313rem;
 }
 
 div.left { float: left; }
 div.right { float: right; }
+
+h6.company,
+h6.institution,
+h6.skill {
+	margin-top: 0.530rem;
+	margin-bottom: 0.530rem;
+
+	font-family: Calibri, Arial;
+
+	font-size: 0.75rem;
+}
+
+h6.skill {
+	display: inline-block;
+}
+
+/* Forms */
+
+input[type="text"],
+textarea {
+	margin: 0 auto 0.750rem auto;
+	padding: 0 0.313rem 0 0.313rem;
+
+	color: #000000;
+
+	font-family: Calibri, Arial;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	width: 99%;
+	height: 2rem;
+}
+
+textarea {
+	padding: 0.313rem 0.313rem 0.313rem 0.313rem;
+
+	width: 99%;
+	height: 6.250rem;
+}
 
 /* MIX */
 
@@ -304,5 +323,11 @@ ul#menu,
 ul.office,
 ul.formation {
 	margin: 0;
+	padding: 0;
+}
+
+ul#personal_informations,
+ul.skills {
+	margin: 0 0 1.875rem 0;
 	padding: 0;
 }

@@ -1,5 +1,5 @@
 {
-	"copyright" : "© {yearSite}{to}, todos os direitos reservados.",
+	"copyright" : "© {year_site}{to}, todos os direitos reservados.",
     "profession" : "Desenvolvedor de Sistemas",
     "menu" : {
     	"profile" : {
@@ -133,6 +133,13 @@
         }
     },
     "contact" : {
-        
+        "name" : "Nome",
+        "mail" : "E-Mail",
+        "phone_number" : "Telefone",
+        "subject" : "Assunto",
+        "message" : "Mensagem",
+        "required" : "(obrigatório)",
+        "send" : "Enviar",
+        "sending" : "Enviando"
     }
 }

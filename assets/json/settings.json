@@ -1,8 +1,10 @@
 {
 	"default_language" : "pt-br",
 	"photos_path" : "assets/images/photos/",
+	"contact_form_id" : "contact_form",
+	"postmail_access_token" : "gjrcw53zjmljh6sseit5pjur",
 	"total_photos" : 3,
-	"yearSite" : 2016,
+	"year_site" : 2016,
 	"colors" : [
 		"bg_dark_red",
 		"bg_green",
