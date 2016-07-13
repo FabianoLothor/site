@@ -140,6 +140,13 @@
         "message" : "Mensagem",
         "required" : "(obrigatório)",
         "send" : "Enviar",
-        "sending" : "Enviando"
+        "sending" : "Enviando",
+        "form_messages" : {
+            "success" : "Mensagem enviada com sucesso, obrigado por entrar em contato!",
+            "fail" : "Ocorreu um erro ao tentar enviar a mensagem, por favor, entre em contato diretamente através do e-mail {email}.",
+            "empty_field" : "O campo \"{field}\" deve ser preenchido.",
+            "invalid_email" : "E-Mail inválido.",
+            "invalid_phone_number" : "Número de Telefone inválido, digite apenas números."
+        }
     }
 }
