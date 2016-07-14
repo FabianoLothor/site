@@ -74,21 +74,12 @@ ul {
 
 li.personal_informations_item label,
 li.skills_item label {
-	background: #FFFFFF;
-
-	color: #000000;
-
 	margin: 0.125rem 0 0.125rem 0;
 	padding: 0.5rem;
 
 	width: 8rem;
 
-	text-align: left;
-	font-weight: bold;
-
-	border-radius: 0.157rem;
-	-moz-border-radius: 0.157rem;
-	-webkit-border-radius: 0.157rem;
+	color: #000000;
 }
 
 li.skills_item label {
@@ -173,6 +164,20 @@ ul.formation li i span {
 #jobs h4,
 #education h4,
 #skills h4 { margin-bottom: 0.938rem; }
+
+p#alert_message {
+	margin: 0;
+	padding: 0.625rem;
+
+	float: left;
+
+	width: 37.500rem;
+	height: 1rem;
+
+	color: #A9A9A9;
+
+	border: 0.063rem solid #A9A9A9;
+}
 
 /* Classes */
 
@@ -292,6 +297,22 @@ h6.skill {
 	display: inline-block;
 }
 
+p#alert_message.success_message {
+	background: #CCFFCC;
+
+	color: #00CC00;
+
+	border: 0.063rem solid #00CC00;
+}
+
+p#alert_message.fail_message {
+	background: #FFCCCC;
+
+	color: #FF0000;
+
+	border: 0.063rem solid #FF0000;
+}
+
 /* Forms */
 
 input[type="text"],
@@ -352,4 +373,17 @@ ul#personal_informations,
 ul.skills {
 	margin: 0 0 1.875rem 0;
 	padding: 0;
+}
+
+li.personal_informations_item label,
+li.skills_item label,
+p#alert_message {
+	background: #FFFFFF;
+
+	text-align: left;
+	font-weight: bold;
+
+	border-radius: 0.157rem;
+	-moz-border-radius: 0.157rem;
+	-webkit-border-radius: 0.157rem;
 }
