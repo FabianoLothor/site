@@ -71,8 +71,11 @@
 							    <input type="text" name="phone_number" maxlength="20" placeholder="{phone_number}" />
 							    <input type="text" name="subject" maxlength="100" required="required" placeholder="{subject} {required}" />
 							    <textarea name="message" maxlength="500" required="required" placeholder="{message} {required}"></textarea>
-							    <p id="alert_message" hidden="true">{alert_message}</p>
-							    <input id="send_form_button" type="submit" value="send" />
+							    <div id="bottom_form">
+						    		<p id="alert_message" class="left" hidden="true">{alert_message}</p>
+						    		<input id="send_form_button" class="right" type="submit" value="send" />
+						    		<span id="sending" class="right" hidden="true"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></span>
+							    </div>
 							</form>
 						</div>
 					</section>

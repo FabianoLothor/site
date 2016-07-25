@@ -152,8 +152,10 @@ document.addEventListener("sendMail", function(e) {
 	content = e.detail;
 
 	sendFormButton = $(e.srcElement.activeElement);
-	sendFormButton.val(content.contact.sending + "...");
     sendFormButton.prop('disabled', true);
+    sendFormButton.prop('hidden', true);
+
+    $("#sending").prop('hidden', false);
 
     var data = {};
 
@@ -166,6 +168,12 @@ document.addEventListener("sendMail", function(e) {
     	//$("#" + _settings.contact_form_id + " [name='subject']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='subject']").val() + "." + "\n" +
     	$("#" + _settings.contact_form_id + " [name='message']").attr("placeholder") + ": \n\n" + $("#" + _settings.contact_form_id + " [name='message']").val();
 
+	sendFormButton.prop('disabled', false);
+    sendFormButton.prop('hidden', false);
+
+    $("#sending").prop('hidden', true);
+
+/*
 	$.post(_settings.postmail_link,
         data,
         function() {
@@ -174,6 +182,6 @@ document.addEventListener("sendMail", function(e) {
     ).fail(function() {
     	console.log("error");
     });
-
+*/
     return false;
 }, false);

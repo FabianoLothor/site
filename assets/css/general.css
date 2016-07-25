@@ -279,8 +279,8 @@ div.right {
 	width: 20.313rem;
 }
 
-div.left { float: left; }
-div.right { float: right; }
+.left { float: left; }
+.right { float: right; }
 
 h6.company,
 h6.institution,
@@ -356,8 +356,6 @@ textarea {
 	margin: 0;
 	padding: 0.625rem;
 
-	float: right;
-
 	background-color: #FFFFFF;
 
 	color: #A9A9A9;
@@ -367,11 +365,7 @@ textarea {
 	cursor: pointer;
 }
 
-#send_form_button:hover {
-    color: #000000;
-
-    border: 0.063rem solid #000000;
-}
+#send_form_button:hover { color: #000000; }
 
 /* MIX */
 
