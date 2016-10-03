@@ -68,7 +68,7 @@
 							<form id="contact_form" autocomplete="off">
 								<input type="text" name="name" maxlength="100" required="required" placeholder="{name} {required}" />
 							    <input type="text" name="mail" maxlength="100" required="required" placeholder="{mail} {required}" />
-							    <input type="text" name="phone_number" maxlength="20" placeholder="{phone_number}" />
+							    <input type="text" name="phone_number" maxlength="20" placeholder="{phone_number}" data-inputmask="'alias':'phone'" />
 							    <input type="text" name="subject" maxlength="100" required="required" placeholder="{subject} {required}" />
 							    <textarea name="message" maxlength="500" required="required" placeholder="{message} {required}"></textarea>
 							    <div id="bottom_form">
@@ -89,6 +89,8 @@
 		<!-- Loading JS -->
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="http://jackrugile.com/jrumble/js/jquery.jrumble.1.3.min.js"></script>
+		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/extra/phone-codes/phone.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js"></script>
 
 		<script src="assets/js/events.js"></script>

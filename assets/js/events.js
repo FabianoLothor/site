@@ -123,12 +123,13 @@ document.addEventListener("contentReceived", function(e) {
 				break;
 				case "contact" :
 					$("#contact_form input[type='text']").each(function() {
-						$(this).attr("placeholder",
-							$(this).attr("placeholder")
-								.replace("{" + $(this).attr("name") + "}", content.contact[$(this).attr("name")])
-								.replace("{required}", content.contact.required)
+						$(this).attr("placeholder", $(this).attr("placeholder")
+							.replace("{" + $(this).attr("name") + "}", content.contact[$(this).attr("name")])
+							.replace("{required}", content.contact.required)
 						);
 					});
+
+					$("#" + _settings.contact_form_id + " [name='phone_number']").inputmask("phone");
 
 					textarea = $("#contact_form textarea");
 					textarea.attr("placeholder", textarea.attr("placeholder")
@@ -149,39 +150,103 @@ document.addEventListener("contentReceived", function(e) {
 }, false);
      
 document.addEventListener("sendMail", function(e) {
-	content = e.detail;
+	$("#alert_message").fadeOut(500, function() {
+		content = e.detail;
 
-	sendFormButton = $(e.srcElement.activeElement);
-    sendFormButton.prop('disabled', true);
-    sendFormButton.prop('hidden', true);
+    	// Form Validation (INIT)
 
-    $("#sending").prop('hidden', false);
+    	if($("#" + _settings.contact_form_id + " [name='name']").val() === "") {
+	    	showAlertMessage("warning", content.contact.form_messages.empty_field
+				.replace("{field}", $("#" + _settings.contact_form_id + " [name='name']").attr("placeholder"))
+				.replace(" " + content.contact.required, "")
+			);
 
-    var data = {};
+			return false;
+	    }
 
-    data["access_token"] = _settings.postmail_access_token;
-    data["subject"] = $("#" + _settings.contact_form_id + " [name='subject']").val();
-    data["text"] =
-    	$("#" + _settings.contact_form_id + " [name='name']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='name']").val() + "." + "\n" +
-    	$("#" + _settings.contact_form_id + " [name='mail']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='mail']").val() + "." + "\n" +
-    	$("#" + _settings.contact_form_id + " [name='phone_number']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='phone_number']").val() + "." + "\n" +
-    	//$("#" + _settings.contact_form_id + " [name='subject']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='subject']").val() + "." + "\n" +
-    	$("#" + _settings.contact_form_id + " [name='message']").attr("placeholder") + ": \n\n" + $("#" + _settings.contact_form_id + " [name='message']").val();
+	    if($("#" + _settings.contact_form_id + " [name='mail']").val() === "") {
+	    	showAlertMessage("warning", content.contact.form_messages.empty_field
+				.replace("{field}", $("#" + _settings.contact_form_id + " [name='mail']").attr("placeholder"))
+				.replace(" " + content.contact.required, "")
+			);
 
-	sendFormButton.prop('disabled', false);
-    sendFormButton.prop('hidden', false);
+			return false;
+	    }
 
-    $("#sending").prop('hidden', true);
+	    if($("#" + _settings.contact_form_id + " [name='subject']").val() === "") {
+	    	showAlertMessage("warning", content.contact.form_messages.empty_field
+				.replace("{field}", $("#" + _settings.contact_form_id + " [name='subject']").attr("placeholder"))
+				.replace(" " + content.contact.required, "")
+			);
 
-/*
-	$.post(_settings.postmail_link,
-        data,
-        function() {
-        	console.log("success");
-        }
-    ).fail(function() {
-    	console.log("error");
+			return false;
+	    }
+
+	    if($("#" + _settings.contact_form_id + " [name='message']").val() === "") {
+	    	showAlertMessage("warning", content.contact.form_messages.empty_field
+				.replace("{field}", $("#" + _settings.contact_form_id + " [name='message']").attr("placeholder"))
+				.replace(" " + content.contact.required, "")
+			);
+
+			return false;
+	    }
+
+	    if(!($("#" + _settings.contact_form_id + " [name='mail']").val().isEmail())) {
+	    	showAlertMessage("warning", content.contact.form_messages.invalid_email);
+
+			return false;
+	    }
+
+	    // Form Validation (END)
+
+		sendFormButton = $(e.srcElement.activeElement);
+	    sendFormButton.prop('disabled', true);
+	    sendFormButton.prop('hidden', true);
+
+	    $("#sending").prop('hidden', false);
+
+	    var data = {};
+	    var mailSent = false;
+
+	    data["access_token"] = _settings.postmail_access_token;
+	    data["subject"] = $("#" + _settings.contact_form_id + " [name='subject']").val();
+	    data["text"] =
+	    	$("#" + _settings.contact_form_id + " [name='name']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='name']").val() + "." + "\n" +
+	    	$("#" + _settings.contact_form_id + " [name='mail']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='mail']").val() + "." + "\n" +
+	    	$("#" + _settings.contact_form_id + " [name='phone_number']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='phone_number']").val() + "." + "\n" +
+	    	//$("#" + _settings.contact_form_id + " [name='subject']").attr("placeholder") + ": " + $("#" + _settings.contact_form_id + " [name='subject']").val() + "." + "\n" +
+	    	$("#" + _settings.contact_form_id + " [name='message']").attr("placeholder") + ": \n\n" + $("#" + _settings.contact_form_id + " [name='message']").val();
+
+    	$.post(
+    		_settings.postmail_link,
+    		data,
+	        function() {
+	        	showAlertMessage("success", content.contact.form_messages.success, "check-square");
+
+	        	mailSent = true;
+	        }
+	    ).fail(
+	    	function() {
+	    		showAlertMessage(
+	    			"fail",
+	    			content.contact.form_messages.fail
+						.replace("{email}", _informations.email),
+					"times-circle"
+				);
+	    	}
+	    ).always(
+	    	function() {
+	    		sendFormButton.prop('disabled', false);
+			    sendFormButton.prop('hidden', false);
+
+			    $("#sending").prop('hidden', true);
+
+			    setTimeout(function() {
+					$("#alert_message").fadeOut(500);
+				}, 10000);
+			}
+		);
+
+	    return mailSent;
     });
-*/
-    return false;
 }, false);

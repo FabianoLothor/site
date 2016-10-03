@@ -71,6 +71,16 @@ function menuLoaded() {
 	$(".menu_item_block").eq(0).click();
 }
 
+function showAlertMessage(type, message) { showAlertMessage(type, message, type); }
+function showAlertMessage(type, message, icon) {
+	$("#alert_message")
+		.html("<i class='fa fa-" + icon + " fa-fw'></i> " + message)
+		.addClass(type + "_message")
+		.fadeIn(500);
+}
+
 //
 
-Number.prototype.padLeft = function (n,str) { return Array(n-String(this).length+1).join(str||'0')+this; }
+Number.prototype.padLeft = function (n, str) { return Array(n-String(this).length+1).join(str||'0')+this; }
+
+String.prototype.isEmail = function() { return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this); }
