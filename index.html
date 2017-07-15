@@ -13,88 +13,88 @@
 		<title>{title}</title>
 	</head>
 
-		<body>
-			<div id="main" class="center">
-				<header>
-					<section id="social" hidden></section>
+	<body>
+		<div id="main" class="center">
+			<header>
+				<section id="social" hidden></section>
 
-					<h1 id="full_name">{full_name}</h1>
-					<h5 id="profession">{profession}</h5>
-				</header>
+				<h1 id="full_name">{full_name}</h1>
+				<h5 id="profession">{profession}</h5>
+			</header>
 
-				<section id="content">
-					<nav id="navigation">
-						<ul id="menu"></ul>
-					</nav>
-					<section id="profile" class="content active" hidden="true">
-						<div>
-							<h2 class="subtitle">{subtitle}</h2>
-							
-							<div class="left">
-								<p id="resume">{resume}</p>
+			<section id="content">
+				<nav id="navigation">
+					<ul id="menu"></ul>
+				</nav>
+				<section id="profile" class="content active" hidden="true">
+					<div>
+						<h2 class="subtitle">{subtitle}</h2>
+						
+						<div class="left">
+							<p id="resume">{resume}</p>
 
-								<div id="photos" class="theme-dark">
-									<div id="photos_slider" class="nivoSlider"></div>
-								</div>
-							</div>
-							<div class="right">
-								<ul id="personal_informations"></ul>
+							<div id="photos" class="theme-dark">
+								<div id="photos_slider" class="nivoSlider"></div>
 							</div>
 						</div>
-					</section>
-					<section id="experience" class="content active scroll" hidden="true">
-						<div>
-							<h2 class="subtitle">{subtitle}</h2>
-
-							<div class="left">
-								<div id="jobs">
-									<h4>{jobs}</h4>
-								</div>
-								<div id="education">
-									<h4>{education}</h4>
-								</div>
-							</div>
-							<div class="right">
-								<div id="skills">
-									<h4>{skills}</h4>
-								</div>
-							</div>
+						<div class="right">
+							<ul id="personal_informations"></ul>
 						</div>
-					</section>
-					<section id="contact" class="content active" hidden="true">
-						<div>
-							<h2 class="subtitle">{subtitle}</h2>
-
-							<form id="contact_form" autocomplete="off">
-								<input type="text" name="name" maxlength="100" required="required" placeholder="{name} {required}" />
-							    <input type="text" name="mail" maxlength="100" required="required" placeholder="{mail} {required}" />
-							    <input type="text" name="phone_number" maxlength="20" placeholder="{phone_number}" data-inputmask="'alias':'phone'" />
-							    <input type="text" name="subject" maxlength="100" required="required" placeholder="{subject} {required}" />
-							    <textarea name="message" maxlength="500" required="required" placeholder="{message} {required}"></textarea>
-							    <div id="bottom_form">
-						    		<p id="alert_message" class="left" hidden="true">{alert_message}</p>
-						    		<input id="send_form_button" class="right" type="submit" value="send" />
-						    		<span id="sending" class="right" hidden="true"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></span>
-							    </div>
-							</form>
-						</div>
-					</section>
+					</div>
 				</section>
+				<section id="experience" class="content active scroll" hidden="true">
+					<div>
+						<h2 class="subtitle">{subtitle}</h2>
 
-				<footer>
-					<strong><span id="copyright">{copyright}</span></strong>
-				</footer>
-			</div>
-		</body>
-		<!-- Loading JS -->
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="http://jackrugile.com/jrumble/js/jquery.jrumble.1.3.min.js"></script>
-		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
-		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/extra/phone-codes/phone.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js"></script>
+						<div class="left">
+							<div id="jobs">
+								<h4>{jobs}</h4>
+							</div>
+							<div id="education">
+								<h4>{education}</h4>
+							</div>
+						</div>
+						<div class="right">
+							<div id="skills">
+								<h4>{skills}</h4>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contact" class="content active" hidden="true">
+					<div>
+						<h2 class="subtitle">{subtitle}</h2>
 
-		<script src="assets/js/events.js"></script>
+						<form id="contact_form" autocomplete="off">
+							<input type="text" name="name" maxlength="100" required="required" placeholder="{name} {required}" />
+						    <input type="text" name="mail" maxlength="100" required="required" placeholder="{mail} {required}" />
+						    <input type="text" name="phone_number" maxlength="20" placeholder="{phone_number}" data-inputmask="'alias':'phone'" />
+						    <input type="text" name="subject" maxlength="100" required="required" placeholder="{subject} {required}" />
+						    <textarea name="message" maxlength="500" required="required" placeholder="{message} {required}"></textarea>
+						    <div id="bottom_form">
+					    		<p id="alert_message" class="left" hidden="true">{alert_message}</p>
+					    		<input id="send_form_button" class="right" type="submit" value="send" />
+					    		<span id="sending" class="right" hidden="true"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></span>
+						    </div>
+						</form>
+					</div>
+				</section>
+			</section>
 
-		<script src="assets/js/general.js"></script>
-		<!-- Loading JS -->
+			<footer>
+				<strong><span id="copyright">{copyright}</span></strong>
+			</footer>
+		</div>
+	</body>
+	<!-- Loading JS -->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://jackrugile.com/jrumble/js/jquery.jrumble.1.3.min.js"></script>
+	<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+	<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/extra/phone-codes/phone.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js"></script>
+
+	<script src="assets/js/events.js"></script>
+
+	<script src="assets/js/general.js"></script>
+	<!-- Loading JS -->
 </html>
