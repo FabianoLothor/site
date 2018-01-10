@@ -1,25 +1,25 @@
 {
-	"copyright" : "© {year_site}{to}, todos os direitos reservados.",
+    "copyright" : "© {year_site}{to}, todos os direitos reservados.",
     "profession" : "Desenvolvedor de Sistemas",
     "menu" : {
-    	"profile" : {
-    		"title" : "Perfil",
-    		"subtitle" : "Informações Pessoais",
-    		"icon" : "user",
-    		"enable" : true
-    	},
-    	"experience" : {
-    		"title" : "Carreira",
-    		"subtitle" : "Habilidades e Experiências",
-    		"icon" : "code",
-    		"enable" : true
-		},
-    	"contact" : {
-    		"title" : "Contato",
-    		"subtitle" : "Fale Comigo",
-    		"icon" : "envelope",
-    		"enable" : true
-    	}
+        "profile" : {
+            "title" : "Perfil",
+            "subtitle" : "Informações Pessoais",
+            "icon" : "user",
+            "enable" : true
+        },
+        "experience" : {
+            "title" : "Carreira",
+            "subtitle" : "Habilidades e Experiências",
+            "icon" : "code",
+            "enable" : true
+        },
+        "contact" : {
+            "title" : "Contato",
+            "subtitle" : "Fale Comigo",
+            "icon" : "envelope",
+            "enable" : true
+        }
     },
     "profile" : {
         "name" : "Nome",
@@ -30,7 +30,7 @@
         "phone" : "Telefone",
         "birthplace" : "Naturalidade",
         "birthday" : "Data de Nascimento",
-        "resume" : "Sou formado em Análise e Desenvolvimento de Sistemas, trabalhei por cerca de quatro anos como desenvolvedor antes de ingressar na UFPB como servidor público, no entanto, contínuo atuando na área como <i>freelancer</i> e através de projetos pessoais. Nas horas vagas, adoro estudar, ler e jogar jogos eletrônicos."
+        "resume" : "Sou formado em Análise e Desenvolvimento de Sistemas e trabalho a mais de 5 anos com TI. Durante esse tempo já atuei em diversas áreas, mas hoje, faço parte da equipe de desenvolvedores da UFPB. Nas horas vagas, adoro estudar, ler e jogar jogos eletrônicos e de tabuleiro."
     },
     "experience" : {
         "jobs_title" : "Atividades Profisisonais",
@@ -68,7 +68,7 @@
                     "Manutenção do Banco de Dados"
                 ]
             },
-            "03/2015 - {today}" : {
+            "03/2015 - 12/2017" : {
                 "company" : "UFPB",
                 "office" : "Técnico de Tecnologia da Informação",
                 "locality" : "João Pessoa/PB, BRA",
@@ -76,6 +76,16 @@
                     "Manutenção da Infraestrutura de Rede",
                     "Manutenção de Computadores",
                     "Serviço de Apoio aos Usuários"
+                ]
+            },
+            "12/2017 - {today}" : {
+                "company" : "UFPB",
+                "office" : "Técnico de Tecnologia da Informação",
+                "locality" : "João Pessoa/PB, BRA",
+                "tasks" : [
+                    "Desenvolvimento de Sistemas",
+                    "Gerenciamento das Tarefas",
+                    "Manutenção do Banco de Dados"
                 ]
             }
         },
